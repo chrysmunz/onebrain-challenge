@@ -40,6 +40,8 @@ const counterReducer = (state = { selected: null, counters: [] }, action) => {
       return { selected: state.selected, counters: [...state.counters, { id: nextId++, count: 0 }] };
     case "REMOVE":
       return { selected: null, counters: state.counters.filter(item => item.id !== action.id) };
+    case "REMOVE_ALL":
+      return { selected: null, counters: [] };
     case "INCREMENT":
       return { selected: state.selected, counters: state.counters.map(counter => update(counter, action)) };
     case "DECREMENT":

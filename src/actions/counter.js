@@ -32,6 +32,12 @@ export const remove = (id) => {
   };
 };
 
+export const removeAll = () => {
+  return {
+    type: "REMOVE_ALL",
+  };
+};
+
 export const select = (id) => {
   return {
     type: "SELECT",

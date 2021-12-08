@@ -6,7 +6,7 @@ import { Title, Type1, Type2 } from './styles';
 const Button = (props) => {
   if (props.type === 'default') {
     return (
-      <Type1 onPress={props.onPress}>
+      <Type1 style={{ opacity: props.disabled ? 0.5 : 1 }} disabled={props.disabled} onPress={props.onPress}>
         <Title>{props.children}</Title>
       </Type1>
     );

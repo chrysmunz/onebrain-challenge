@@ -7,7 +7,7 @@ export const Container = styled.TouchableOpacity`
   border-width: 6px;
   border-color: ${props => props.selected ? '#FFFFFF' : '#C0C0C0'};
   padding: 10px;
-  margin-bottom: 20px;
+  margin-vertical: 10px;
 `;
 
 export const Title = styled.Text`
