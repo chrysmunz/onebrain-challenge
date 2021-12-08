@@ -10,9 +10,11 @@ const MainNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: false,
-        tabBarActiveBackgroundColor: '#000000',
-        tabBarInactiveBackgroundColor: '#000000'
+        headerStyle:{ backgroundColor: '#23404F' },
+        headerTintColor: '#FFFFFF',
+        headerTitleAlign: 'center',
+        tabBarActiveBackgroundColor: '#23404F',
+        tabBarInactiveBackgroundColor: '#23404F'
       }}
     >
       <Tab.Screen
