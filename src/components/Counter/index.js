@@ -8,7 +8,7 @@ const Counter = (props) => {
       selected={props.selected === props.data.id}
       onPress={props.onPress}
     >
-      <Title selected={props.selected === props.data.id}>Counter {props.data.id + 1}</Title>
+      <Title selected={props.selected === props.data.id}>Counter {props.data.id}</Title>
       <Count selected={props.selected === props.data.id}>{props.data.count}</Count>
     </Container>
 

@@ -32,7 +32,7 @@ const update = (state = {}, action) => {
   }
 };
 
-let nextId = 0;
+let nextId = 1;
 
 const counterReducer = (state = { selected: null, counters: [] }, action) => {
   switch (action.type) {
